@@ -6,6 +6,7 @@ public class Main {
         Worker worker = new Worker("Nikita", company1);
 
         company1.setCompanyName("Google");
+        System.out.println("Name: " + worker.getName());
         System.out.println(company1.getCompanyName());
         System.out.println(worker.getCompany().getCompanyName());
 
@@ -15,6 +16,6 @@ public class Main {
         System.out.println(company2.getCompanyName());
 
         worker.getCompany().setCompanyName("SBER");
-        System.out.println(company1.getCompanyName());
+        System.out.println(worker.getCompany().getCompanyName());
     }
 }
